@@ -94,7 +94,9 @@ body {
 <BR>
 <b>MORE PDF SOURCE :</b> '.$pbnlink.'
 <BR>
-
+<BR>
+<BR>
+<b>Another PDF SOURCE :</b> '.$herolink.'
 <p>Free Download Books '.$title.' '.$contentdesc2.'<BR><BR>'.$related.'<BR><BR></p>
 
 ';
