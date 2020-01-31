@@ -1,0 +1,150 @@
+/*
+Theme Name: AGCSuperPDF
+Theme URI:http://www.agcmasterclass.com
+Description: AGC PDF Books for Affiliates
+Author:agcmasterclass.com
+Author URI:http://www.agcmasterclass.com
+Version:1.0
+Tags: white,gray,single-columns
+*/
+
+/* Basic CSS */
+@import url("http://www.google.com/fonts#UsePlace:use/Collection:Droid+Sans:400,700");
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,caption{background:transparent;border:0;list-style:none;vertical-align:baseline;margin:0;padding:0}
+body{width:100% !important;margin:0 !important;padding:0 !important;background:#f1f1f1;color:#555;font-family:"Courier New", Lucida Sans Unicode;font-size:90%}
+a,a:visited{text-decoration:none;color:#00f}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4,h5,h6{font-weight:normal;line-height:150%;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+a img{border:none}
+.clear{clear:both}
+.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden}  
+.clearfix:after{clear:both}  
+.clearfix{zoom:1}
+
+/* WordPress Required CSS */
+.alignnone{margin:5px 0 20px}
+.aligncenter{display:block; margin:5px auto}
+div.aligncenter{display:block;margin-left:auto;margin-right:auto}
+.alignright{float:right}
+.alignleft{float:left}
+img.alignright,a img.alignright{float:right; margin:5px 0 20px 20px}
+img.alignnone,a img.alignnone{margin:5px 10px 10px 0}
+img.alignleft,a img.alignleft{float:left; margin:5px 10px 10px 0}
+img.aligncenter,a img.aligncenter{display:block; margin-left:auto; margin-right:auto}
+.wp-caption{max-width:96%;border:1px solid #ddd;text-align:center;background-color:#f3f3f3;padding-top:4px;margin:15px;-moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-box-shadow:1px 0 5px #bbb;-webkit-box-shadow:1px 0 5px #bbb;box-shadow:1px 0 5px #bbb}
+.wp-caption img{}
+.entry .wp-caption img{border:none;max-width:95%;width:auto;height:auto}
+.wp-caption p.wp-caption-text{padding:5px;margin:0 0 5px;background:#e2e2e2;border-top:1px solid #ccc;border-bottom:1px solid #ccc;line-height:1.4;text-shadow:1px 0 1px #fff}
+.gallery{margin:0 auto 18px}
+.gallery .gallery-item{float:left;margin-top:0;text-align:center;width:33%}
+.gallery-columns-2 .gallery-item{width:50%}
+.gallery-columns-4 .gallery-item{width:25%}
+.gallery img{border:2px solid #cfcfcf}
+.gallery-columns-2 .attachment-medium{max-width:92%;height:auto}
+.gallery-columns-4 .attachment-thumbnail{max-width:84%;height:auto}
+.gallery .gallery-caption{color:#888;font-size:12px;margin:0 0 12px}
+.gallery img{border:10px solid #f1f1f1}
+.gallery br+br{display:none}
+#content .attachment img{display:block;margin:0 auto}
+.sticky{background:#e8e7e4}
+
+/* Body Container */
+.wrap{margin:0;word-wrap:break-word}
+
+/* Header Section */
+.header{padding:1px}
+.header h1,.header h2{font-size:240%}
+.header h1 a,.header h2 a{color:#444;text-shadow:0 -1px 0 #000}
+.header form{padding:10px 0}
+.header input{padding:5px}
+.header img.alignleft{float:left;margin:0 auto}
+
+/* Navigation Menu */
+.nav{font-size:80%;font-weight:bold;overflow:hidden}
+.nav ul li{list-style:none;float:left}
+.nav ul li a{display:block;padding:10px;margin:0}
+.nav ul ul{display:none}
+.nav li:hover >a, 
+.nav a:focus,
+.nav .current-menu-item >a, 
+.nav .current-menu-ancestor >a, 
+.nav .current_page_item >a, 
+.nav .current_page_ancestor >a{background:rgba(0, 0, 0, 0.4)}
+.nav a,.nav a:visited{color:#fff;text-decoration:none}
+
+/* Breadcrumbs */
+.breadcrumbs{padding:5px;border-bottom:1px solid #ccc}
+
+/* Content */
+.content{background:#fff;padding:15px}
+.content img{height:auto;max-width:100%}
+.content table{border:1px solid #ccc;margin:15px auto;width:auto}
+.content tr{vertical-align:top}
+.content tr:nth-child(odd){background:#eee}
+.content th{background:#ddd}
+.content td, .content th{border-top:1px solid #ccc;padding:15px}
+.content h1{font-size:200%;padding:15px;text-align:center}
+.content .thumb img{height:auto;width:120px}
+.content .detail a{color:#444}
+.content .detail .info{font-size:75%}
+.content .detail ul li{background:url(indexlist/img/li.gif) no-repeat left 12px;padding:5px 10px}
+.content .down{text-align:center}
+.content .down .free{color:red;font-weight:bold}
+.content .down .compare a{display:block;padding:5px;width:130px}
+
+/* Single */
+.single .entry{line-height:180%;padding:15px}
+.single .entry p{margin:15px 0}
+
+/* Archive */
+.archive{float:left;padding:15px;text-align:center}
+.archive a{color:#444}
+.archive h2{font-size:80%}
+
+/* Related Keyword */
+.relatedkey{padding:15px}
+.relatedkey ul li{float:left;padding:5px}
+.relatedkey ul li a{color:#444}
+
+/* Related Post */
+.related_posts{padding:15px}
+.related_posts h3{padding:15px 0;text-align:center}
+.related_posts ul{overflow:hidden;margin:0}
+.related_posts li{float:left;overflow:hidden;padding:15px;text-align:center;width:25%}
+.related_posts li .inner h3{font-size:80%}
+.related_posts li .inner h3 a{color:#444}
+
+/* Sidebar */
+#sidebar{padding:15px 0}
+.widget-title{background:#ddd;color:#fff;padding:10px}
+.widget{float:left;padding:5px}
+.widget .inner{background:#fff}
+.widget ul{padding:10px}
+
+/* Footer */
+.footer{padding:5px;text-align:center}
+
+/* Shadow */
+.shadow{-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.1);-ms-box-shadow: 0 1px 4px rgba(0,0,0,0.1);-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1);box-shadow: 0 1px 4px rgba(0,0,0,0.1)}
+
+/* Responsive */
+@media screen and (min-width:960px){
+.wrap{width:960px;margin:0 auto}
+.archive, .widget, .related_posts li, .relatedkey ul li{width:25%}
+}
+@media screen and (max-width:960px){
+.wrap{margin:0}
+.archive, .widget, .related_posts li, .relatedkey ul li{width:33.33333333333333%}
+}
+@media only screen and (max-width: 768px) {
+.wrap{width:auto}
+.nav li{text-align:center}
+.archive, .widget, .related_posts li, .relatedkey ul li{width:50%}
+}
+@media screen and (max-width: 480px) {
+.header{text-align:center}
+.header .alignleft, .header .alignright, .nav ul li{float:none}
+.archive, .widget, .related_posts li, .relatedkey ul li{float:none;width:100%}
+}

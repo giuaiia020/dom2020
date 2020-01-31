@@ -1,0 +1,67 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+ErrorDocument 404 /404.php
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteRule ^(.*).pdf?$ read.php?file=$1
+RewriteRule ^privacy?$ privacy_main.php
+RewriteRule ^dmca?$ dmca_main.php
+RewriteRule ^contact?$ contact_main.php
+RewriteRule ^related.txt?$ related.php
+RewriteRule ^pbnlink.txt?$ pbn.php
+
+RewriteRule ^robots.txt$ robots.php [L]
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+RewriteRule ^([A-Za-z0-9-]+).jpg$ gambar.php?file=$1 [L]
+RewriteRule feed(.*)$ feed.php?url=$1 [L]
+
+RewriteRule ([0-9]+)-map.xml$ sitemap.xml.php?url=$1 [L]
+RewriteRule sitemap.xml$ sitemap-index.xml.php?url=$1 [L]
+
+#sitemap ++
+RewriteRule ([0-9]+)-manualbook.xml$ sitemap-manual.xml.php?url=$1 [L]
+RewriteRule manual.xml$ sitemap-index-manual.xml.php?url=$1 [L]
+
+
+RewriteRule ^sub?$ sub.php
+RewriteRule ^raml?$ sub2.php
+RewriteRule ^rshaw?$ sub3.php
+RewriteRule ^rzw?$ sub4.php
+
+
+#pages
+RewriteRule ([A-Za-z0-9-]+)pages index.php
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Video
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
+
+  # CSS, JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # Others
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+</IfModule>
