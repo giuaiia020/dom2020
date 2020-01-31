@@ -5,11 +5,11 @@ $subId = $_GET['subId'];
 $cc = trim($_SERVER["HTTP_CF_IPCOUNTRY"]);
 if ($cc == "CH"||$cc == "BE"||$cc == "DK"||$cc == "NO"||$cc == "FR") 
 {
-$offer = 'https://look.udncoeln.com/offer?prod=2&ref=5203690&q='.$judul.'&sub_id='.$subId.'';
+$offer = 'https://look.udncoeln.com/offer?prod=2&ref=5204462&q='.$judul.'&sub_id='.$subId.'';
 }
 else
 {
-$offer = 'https://look.udncoeln.com/offer?prod=2&ref=5203690&q='.$judul.'&sub_id='.$subId.'';
+$offer = 'https://look.udncoeln.com/offer?prod=2&ref=5204462&q='.$judul.'&sub_id='.$subId.'';
 }
 header('Location: '.$offer.'');
 die();
